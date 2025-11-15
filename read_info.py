@@ -82,3 +82,5 @@ while True:
 
 
 
+#with open('textfiles/planets.txt', "w") as f:
+    #print("The summeries are:", read_planet, file=   
