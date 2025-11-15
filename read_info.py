@@ -44,18 +44,13 @@ while True:
 
     elif choice == "3":
         #terminal menu option 3: filter attribute outputted based on user input, always include name in the output with the selected attribute
-        #allow user to enter return to main menu or exit after displaying filtered results
-
-        attribute = input("Enter the attribute to filter by (size, distance_from_sun, moons, description) or press any key to return to main menu: ").strip().lower()
+        attribute = input("Enter the attribute to filter by (size, distance_from_sun, moons, description): ").strip().lower()
         valid_attributes = {"name","size", "distance_from_sun", "moons", "description"}
 
         if attribute not in valid_attributes:
-            main_menu = input("Return to main menu? (yes/no): ").strip().lower()
-            if main_menu != "yes":
-                choice()
-            elif main_menu == "no":
-                attribute = input("Enter the attribute to filter by (size, distance_from_sun, moons, description) or press any key to return to main menu: ").strip().lower()
-
+            print("Invalid attribute. Please choose from name, size, distance_from_sun, moons, description.")
+            return 
+        
         read_planet = []
         with open('textfiles/planets.txt', "r", encoding="utf-8") as file:
             next(file)  # Skip header line
