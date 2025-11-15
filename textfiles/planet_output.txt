@@ -1,0 +1,8 @@
+Mercury,Small,57.9,0,The smallest and fastest planet—scorched on one side and frozen on the other due to its lack of atmosphere.
+Venus,Medium,108.2,0,A hot toxic world with thick clouds and extreme pressure—often called Earth’s “evil twin.”
+Earth,Medium,149.6,1,The only known planet with life rich blue oceans and a protective atmosphere that supports diverse ecosystems.
+Mars,Small,227.9,2,A dusty red desert world with the largest volcano in the solar system and evidence of ancient water.
+Jupiter,Large,778.5,79,A massive gas giant with swirling storms including the Great Red Spot and dozens of diverse moons.
+Saturn,Large,1434,83,Known for its iconic icy rings and many moons Saturn is a light windy gas giant.
+Uranus,Large,2871,27,A cold tilted ice giant that rotates sideways giving it extreme seasons and a pale blue color.
+Neptune,Large,4495,14,The farthest major planet—a deep blue ice giant with strong winds and swirling storms.
