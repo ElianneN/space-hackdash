@@ -52,9 +52,9 @@ while True:
         if attribute not in valid_attributes:
             main_menu = input("Return to main menu? (yes/no): ").strip().lower()
             if main_menu != "yes":
-                False
+                choice()
             elif main_menu == "no":
-                True
+                attribute = input("Enter the attribute to filter by (size, distance_from_sun, moons, description) or press any key to return to main menu: ").strip().lower()
 
         read_planet = []
         with open('textfiles/planets.txt', "r", encoding="utf-8") as file:
@@ -67,13 +67,13 @@ while True:
             planet_obj = planets.planets(name, size, distance_from_sun, moons, description)
         
         if attribute == "size":
-            print("Name:", planet_obj.name, "Size:", planet_obj.size)
+            print("Size:", planet_obj.size)
         elif attribute == "distance_from_sun":
-            print("Name:", planet_obj.name, "Distance from Sun:", planet_obj.distance_from_sun)
+            print("Distance from Sun:", planet_obj.distance_from_sun)
         elif attribute == "moons":
-            print("Name:", planet_obj.name, "Moons:", planet_obj.moons)
+            print("Moons:", planet_obj.moons)
         elif attribute == "description":
-            print("Name:", planet_obj.name, "Description:", planet_obj.description)
+            print("Description:", planet_obj.description)
             
     elif choice == "4":
         break
