@@ -28,3 +28,5 @@ else:
     print("Invalid choice. please choose 1, 2,or 3")
 
 
+#with open('textfiles/planets.txt', "w") as f:
+    #print("The summeries are:", read_planet, file=   
