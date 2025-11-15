@@ -47,7 +47,7 @@ while True:
         #allow user to enter return to main menu or exit after displaying filtered results
 
         attribute = input("Enter the attribute to filter by (size, distance_from_sun, moons, description) or press any key to return to main menu: ").strip().lower()
-        valid_attributes = {"size", "distance_from_sun", "moons", "description"}
+        valid_attributes = {"name","size", "distance_from_sun", "moons", "description"}
 
         if attribute not in valid_attributes:
             main_menu = input("Return to main menu? (yes/no): ").strip().lower()
@@ -65,8 +65,10 @@ while True:
         for planet in read_planet:
             name, size, distance_from_sun, moons, description = planet.split(",")
             planet_obj = planets.planets(name, size, distance_from_sun, moons, description)
-        
-        if attribute == "size":
+
+        if attribute == "name":
+            print("Name:", planet_obj.name)
+        elif attribute == "size":
             print("Size:", planet_obj.size)
         elif attribute == "distance_from_sun":
             print("Distance from Sun:", planet_obj.distance_from_sun)
@@ -78,7 +80,7 @@ while True:
     elif choice == "4":
         break
     else:
-        print("Invalid choice. please choose 1, 2,or 3")
+        print("Invalid choice. please choose 1, 2, 3, or 4.")
 
 
 
